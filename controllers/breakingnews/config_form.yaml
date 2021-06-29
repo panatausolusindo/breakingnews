@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Breaking News
+
+# Model Form Field configuration
+form: $/panatausolusindo/breakingnews/models/breakingnews/fields.yaml
+
+# Model Class name
+modelClass: PanatauSolusindo\BreakingNews\Models\BreakingNews
+
+# Default redirect location
+defaultRedirect: panatausolusindo/breakingnews/breakingnews
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: panatausolusindo/breakingnews/breakingnews/update/:id
+    redirectClose: panatausolusindo/breakingnews/breakingnews
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: panatausolusindo/breakingnews/breakingnews
+    redirectClose: panatausolusindo/breakingnews/breakingnews
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

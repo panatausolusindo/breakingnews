@@ -1,0 +1,9 @@
+{
+    "name": "panatausolusindo/breakingnews",
+    "type": "october-plugin",
+    "description": "Untuk membuat breaking news",
+    "require": {
+        "php": ">=7.2.9",
+        "yfktn/tulisan": "~1.0.11"
+    }
+}

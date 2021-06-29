@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    judul:
+        label: Judul
+        searchable: true
+    url:
+        label: URL
+        searchable: true
+    tampil_sd:
+        label: Tampil s.d.
+        type: date
+        format: d-m-Y
+

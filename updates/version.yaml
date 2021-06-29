@@ -1,0 +1,4 @@
+1.0.1: First version of BreakingNews
+1.0.2:
+  - 'Migrate model dan setting'
+  - create_breaking_news_table.php

@@ -1,0 +1,34 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    tulisan:
+        label: 'Pilih Berita'
+        type: recordfinder
+        list: ~/plugins/yfktn/tulisan/models/tulisan/columns.yaml
+        recordsPerPage: 10
+        title: 'Pilih sumber tulisan'
+        prompt: 'Klik tombol untuk memilih tulisan'
+        nameFrom: judul
+        descriptionFrom: judul
+        span: auto
+        comment: Pilih sumber berita breaking news
+        scope: yangSudahDitampilkan
+    tampil_sd:
+        label: Tampil Sampai Dengan
+        comment: Breaking news tampil sampai dengan tanggal berapa?
+        type: datepicker
+        mode: date
+        span: auto
+        format: d-m-Y
+    judul:
+        label: Judul Breaking News
+        span: auto
+        type: text
+        comment: 'Isikan judul dengan tulisan singkat, kosongkan untuk digenerate otomatis.'
+    url:
+        label: Alamat URL Berita
+        span: auto
+        type: text
+        comment: 'Kosongkan untuk digenerate otomatis, isikan # bila hanya merupakan teks saja.'
