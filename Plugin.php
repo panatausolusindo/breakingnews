@@ -50,10 +50,8 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'PanatauSolusindo\BreakingNews\Components\MyComponent' => 'myComponent',
+            'PanatauSolusindo\BreakingNews\Components\BreakingNews' => 'breakingNews',
         ];
     }
 

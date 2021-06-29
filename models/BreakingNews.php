@@ -90,7 +90,12 @@ class BreakingNews extends Model
             if($kat == null) {
                 throw new \Exception("Tulisan belum memiliki kategori!");
             }
-            $this->attributes['url'] = sprintf("/%s/%s", $kat->slug, $this->tulisan->slug);
+            $this->attributes['url'] = sprintf("/%s/baca/%s", $kat->slug, $this->tulisan->slug);
         }
+    }
+
+    public function scopeTampil($query)
+    {
+        $query->where('tampil_sd', '>=', date('Y-m-d'));
     }
 }
